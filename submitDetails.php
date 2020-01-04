@@ -52,7 +52,7 @@ if (!$con) {
                 }
             }
             if ($flag == 1) {
-                 header('Location: ./sucess.html');
+                 header('Location: ./success.html');
 
             } else {
                 echo '<script type="text/javascript">alert("{
