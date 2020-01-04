@@ -107,13 +107,13 @@ $countryResult = $countryStateCity->getAllCountry();
                     <div class="col-lg-4">
                       <div class="form-group">
                         <label class="form-control-label" for="input-email">Email address</label>
-                        <input onchange="sendOtpToEmail(this.value)" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="input-email" name="r_email" value="garvitsolanki5@gmail.com" class="form-control form-control-alternative" placeholder="jesse@example.com" required />
+                        <input onchange="sendOtpToEmail(this.value)" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="input-email" name="r_email" value="example@gmail.com" class="form-control form-control-alternative" placeholder="jesse@example.com" required />
                       </div>
                     </div>
                     <div class="col-lg-4">
                       <div class="form-group">
                         <label class="form-control-label" for="input-mobile">Mobile</label>
-                        <input type="text" id="input-mobile" name="r_mobile" class="form-control form-control-alternative" placeholder="10 digit mobile number" value="8560842558" required />
+                        <input type="text" id="input-mobile" name="r_mobile" class="form-control form-control-alternative" placeholder="10 digit mobile number" value="1234567890" required />
                       </div>
                     </div>
                     <div class="col-lg-4">
