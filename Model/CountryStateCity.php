@@ -1,7 +1,7 @@
 <?php
 namespace Phppot;
 
-use Phppot\DataSource;
+use \Phppot\DataSource;
 
 class CountryStateCity
 {
@@ -9,7 +9,7 @@ class CountryStateCity
     
     function __construct()
     {
-        require_once __DIR__ . './../lib/DataSource.php';
+        require_once __DIR__ . '/DataSource.php';
         $this->ds = new DataSource();
     }
     

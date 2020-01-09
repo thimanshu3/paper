@@ -2,7 +2,7 @@
 
 namespace Phppot;
 
-use Phppot\CountryState;
+use \Phppot\CountryState;
 
 require_once __DIR__ . '/Model/CountryStateCity.php';
 $countryStateCity = new CountryStateCity();
@@ -66,13 +66,13 @@ $countryResult = $countryStateCity->getAllCountry();
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-username">Name</label>
-                        <input type="text" id="input-username" name="r_username" class="form-control form-control-alternative" placeholder="Username" value="lucky.jesse" required />
+                        <input type="text" id="input-username" name="r_username" class="form-control form-control-alternative" placeholder="Username"  required />
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-designation">Designation</label>
-                        <input type="text" id="input-designation" name="r_designation" class="form-control form-control-alternative" placeholder="Ex: Project Manager" value="lucky.jesse" required />
+                        <input type="text" id="input-designation" name="r_designation" class="form-control form-control-alternative" placeholder="Ex: Project Manager" required />
                       </div>
                     </div>
                     <!-- <div class="col-lg-6">
@@ -92,14 +92,14 @@ $countryResult = $countryStateCity->getAllCountry();
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label class="form-control-label" for="input-qual">Highest Qualificaton</label>
-                        <input type="text" id="input-qual" name="r_qual" class="form-control form-control-alternative" value="Lucky" required />
+                        <label class="form-control-label" for="input-qual">Occupation</label>
+                        <input type="text" id="input-qual" name="r_qual" class="form-control form-control-alternative" required />
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-org">Institution/Organization</label>
-                        <input type="text" id="input-org" name="r_org" class="form-control form-control-alternative" value="Jesse" required />
+                        <input type="text" id="input-org" name="r_org" class="form-control form-control-alternative" required />
                       </div>
                     </div>
                   </div>
@@ -107,19 +107,19 @@ $countryResult = $countryStateCity->getAllCountry();
                     <div class="col-lg-4">
                       <div class="form-group">
                         <label class="form-control-label" for="input-email">Email address</label>
-                        <input onchange="sendOtpToEmail(this.value)" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="input-email" name="r_email" value="example@gmail.com" class="form-control form-control-alternative" placeholder="jesse@example.com" required />
+                        <input onchange="sendOtpToEmail(this.value)" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="input-email" name="r_email" class="form-control form-control-alternative" placeholder="jesse@example.com" required />
                       </div>
                     </div>
                     <div class="col-lg-4">
                       <div class="form-group">
                         <label class="form-control-label" for="input-mobile">Mobile</label>
-                        <input type="text" id="input-mobile" name="r_mobile" class="form-control form-control-alternative" placeholder="10 digit mobile number" value="1234567890" required />
+                        <input type="text" id="input-mobile" name="r_mobile" class="form-control form-control-alternative" placeholder="10 digit mobile number" required />
                       </div>
                     </div>
                     <div class="col-lg-4">
                       <div class="form-group">
                         <label class="form-control-label" for="input-otp">OTP</label>
-                        <input onchange="validateEmail(this.value)" type="number" id="input-otp" name="r_otp" class="form-control form-control-alternative" placeholder="Enter Otp here.." required />
+                        <input onchange="validateEmail(this.value)" type="number" id="validate" name="r_otp" class="form-control form-control-alternative" placeholder="Enter Otp here.." required />
                       </div>
                     </div>
                   </div>
@@ -127,13 +127,13 @@ $countryResult = $countryStateCity->getAllCountry();
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-alt-email">Alternate Email address</label>
-                        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="input-alt-email" name="r_alt_email" class="form-control form-control-alternative" placeholder="jesse@example.com" />
+                        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="input-alt-email" name="r_alt_email" class="form-control form-control-alternative" placeholder="jesse@example.com" required/>
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-alt-mob">Alternate Mobile</label>
-                        <input type="text" id="input-calt-mob" class="form-control form-control-alternative" name="r_alt_mob" placeholder="10 digit mobile number" value="8956235845" />
+                        <input type="text" id="input-calt-mob" class="form-control form-control-alternative" name="r_alt_mob" placeholder="10 digit mobile number" required/>
                       </div>
                     </div>
                   </div>
@@ -148,7 +148,7 @@ $countryResult = $countryStateCity->getAllCountry();
                     <div class="col-md-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-address">Address</label>
-                        <input id="input-address" name="r_address" class="form-control form-control-alternative" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09" type="text" required />
+                        <input id="input-address" name="r_address" class="form-control form-control-alternative" placeholder="Home Address" type="text" required />
                       </div>
                     </div>
                   </div>
@@ -188,7 +188,7 @@ $countryResult = $countryStateCity->getAllCountry();
                       <div class="form-group">
                         <label class="form-control-label" for="pincode">Postal code</label>
 
-                        <input type="text" id="pincode" name="r_pincode" class="form-control form-control-alternative" placeholder="6 digit picode" value="313001" required />
+                        <input type="text" id="pincode" name="r_pincode" class="form-control form-control-alternative" placeholder="6 digit pincode" required />
 
                       </div>
                     </div>
@@ -203,20 +203,26 @@ $countryResult = $countryStateCity->getAllCountry();
                     <div class="col-lg-3">
                       <div class="form-group">
                         <label class="form-control-label" for="input-title">Paper Title</label>
-                        <input type="text" id="input-title" name="r_title" class="form-control form-control-alternative" value="abcd" placeholder="Paper Title" required />
+                        <input type="text" id="input-title" name="r_title" class="form-control form-control-alternative" placeholder="Paper Title" required />
                       </div>
                     </div>
                     <div class="col-lg-3">
                       <div class="form-group">
-                        <label class="form-control-label" for="input-pages">Number of Pages</label>
-                        <input type="number" id="input-pages" class="form-control form-control-alternative" name="r_pages" value="50" placeholder="Number of Pages" required />
+                        <label class="form-control-label" for="input-pages">Number of Pages (max. 8 pages)</label>
+                        <input type="number" id="input-pages" class="form-control form-control-alternative" name="r_pages"  placeholder="Number of Pages" required />
                       </div>
                     </div>
 
                     <div class="col-lg-3">
                       <div class="form-group">
-                        <label class="form-control-label" for="input-country">Total No. of Authors Including You</label>
-                        <input type="number" id="authorscount" name= "r_author_count" class="form-control form-control-alternative" value="0" onchange="generate()" required />
+                        <label class="form-control-label" for="input-country">No. of Authors (max. 5)</label>
+                        <input type="number" id="authorscount" name="r_author_count" class="form-control form-control-alternative" value="0" onchange="generate()" required />
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-abstract">Abstract (max. 200 words)</label>
+                        <input type="text" id="abstract" name="r_abstract" placeholder="Brief Description" class="form-control form-control-alternative" required />
                       </div>
                     </div>
                     <!-- <div class="col-lg-3">
@@ -233,24 +239,23 @@ $countryResult = $countryStateCity->getAllCountry();
                   <div id="parentofauthdiv" class="row">
 
                   </div>
-                  <div class="row">
+                  <div class="row mt-4">
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="track">Track in Which Your Submision Belongs</label>
                         <select style="width: 100%;" name="r_track" id="track" class="demoInputBox" required>
                           <option>Select Track</option>
-                          <option>Track 1</option>
-                          <option>Track 2</option>
-                          <option>Track 3</option>
-                          <option>Track 4</option>
+                          <option>Engineering</option>
+                          <option>Science</option>
+                          <option>Management</option>
                         </select> </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label class="form-control-label" for="track">Track in Which Your Submision Belongs</label>
+                        <label class="form-control-label" for="track">Paper Upload (.pdf or .doc format)</label>
 
                         <div class="custom-file">
-                          <input type="file"  name="r_file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" >
+                          <input type="file" name="r_file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" onchange="uploadValidation('inputGroupFile01')" required>
                           <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                         </div>
                       </div>
@@ -258,7 +263,7 @@ $countryResult = $countryStateCity->getAllCountry();
                   </div>
                 </div>
                 <div class="col-lg-2 text-right float-right">
-                  <button type="submit" name="btn-save" id="submit" class="btn btn-lg btn-block btn-primary" disabled>Submit</button>
+                  <button type="submit" name="btn-save" id="submit" class="btn btn-lg btn-block btn-primary" style="display:none;">Submit</button>
                 </div>
               </form>
             </div>
@@ -299,14 +304,20 @@ $countryResult = $countryStateCity->getAllCountry();
   function generate() {
 
     var count = parseInt(document.getElementById("authorscount").value);
-    if (count > 15) {
-      alert("you can't add more than 15 authors");
+    if (count > 4) {
+      Swal.fire({
+        position: 'top-end',
+        icon: 'warning',
+        title: 'Max. 5 authors allowed',
+        showConfirmButton: false,
+        timer: 1500
+      })
       document.getElementById("authorscount").value = "";
 
-    } else if (count >= 0 && count <= 15) {
+    } else if (count >= 0 && count <= 4) {
       document.getElementById('parentofauthdiv').innerHTML = '';
       for (i = 0; i < count; i++) {
-        var input = '<div style="width: 100%;" class="row" name="authors"><div class="col-lg-6"><label class ="form-control-label">Author ' + (i + 1) + '</label><div class="form-group"><label class="form-control-label" for="authName">Name of Author</label><input type="text" name="authName[]" class="form-control form-control-alternative" /></div></div><div class="col-lg-6"><div class="form-group"><label class="form-control-label" for="authInstitute">Institution / organization</label><input type="text" name="authInstitute[]" class="form-control form-control-alternative" placeholder="organisation name" /></div></div><div class="col-lg-4"><div class="form-group"><label class="form-control-label" for="authDesi">Designation</label><input type="text" name="authDesi[]" class="form-control form-control-alternative" placeholder="jesse@example.com" /></div></div><div class="col-lg-4"><div class="form-group"><label class="form-control-label" for="authEmail">Email address</label><input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="authEmail[]" class="form-control form-control-alternative" /></div></div><div class="col-lg-4"><div class="form-group"><label class="form-control-label" for="authMobile">Mobile</label><input type="tel" name="authMobile[]" class="form-control form-control-alternative"  /></div></div></div>';
+        var input = '<div style="width: 100%; background-color:#f4eab4" class="row mt-4 " name="authors"><div class="col-lg-6"><label class ="form-control-label">Author ' + (i + 1) + '</label><div class="form-group"><label class="form-control-label" for="authName">Name of Author</label><input type="text" name="authName[]" class="form-control form-control-alternative" /></div></div><div class="col-lg-6 mt-4"><div class="mt-1 form-group"><label class="form-control-label" for="authInstitute">Institution / organization</label><input type="text" name="authInstitute[]" class="form-control form-control-alternative" placeholder="organisation name" /></div></div><div class="col-lg-4"><div class="form-group"><label class="form-control-label" for="authDesi">Designation</label><input type="text" name="authDesi[]" class="form-control form-control-alternative" placeholder="jesse@example.com" /></div></div><div class="col-lg-4"><div class="form-group"><label class="form-control-label" for="authEmail">Email address</label><input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="authEmail[]" class="form-control form-control-alternative" /></div></div><div class="col-lg-4"><div class="form-group"><label class="form-control-label" for="authMobile">Mobile</label><input type="tel" name="authMobile[]" class="form-control form-control-alternative"  /></div></div></div>';
         $("#parentofauthdiv").append(input);
       }
     } else {
@@ -319,40 +330,69 @@ $countryResult = $countryStateCity->getAllCountry();
 
 
   function sendOtpToEmail(a) {
-     $.ajax({
-        url: "./SendOtpApi.php",
-        type: "GET",
-        data:'email='+a,
-        crossDomain: true,
-        success: function(result) {
 
-          localStorage.setItem("otp", result);
-           Swal.fire(
-            'sent!',
-            'OTP sent successfully to "'+a+'"',
-            'success'
-          );
 
-        },
-
-        error: function(result) {
+    /* $.ajax({
+      url: "./CheckEmail.php",
+      type: "GET",
+      data: 'email=' + a,
+      crossDomain: true,
+      success: function(result) {
+        if(!result.status == true){
           Swal.fire(
-            'OH No!',
-            'Something went wrong Please Try again',
-            'error'
-          );
+          'sorry',
+          'Something went wrong Please Try again',
+          'error'
+        );
         }
+        
+      },
 
-      }); 
+      error: function(result) {
+        Swal.fire(
+          'OH No!',
+          'Something went wrong Please Try again',
+          'error'
+        );
+      }
+
+    }); */
+
+
+     $.ajax({
+       url: "./SendOtpApi.php",
+       type: "GET",
+       data: 'email=' + a,
+       crossDomain: true,
+       success: function(result) {
+
+         localStorage.setItem("otp", result);
+         Swal.fire(
+           'sent!',
+           'OTP sent successfully to "' + a + '"',
+           'success'
+         );
+
+       },
+
+       error: function(result) {
+         Swal.fire(
+           'OH No!',
+           'Something went wrong Please Try again',
+           'error'
+         );
+       }
+
+     });
 
   }
 
-  function validateEmail(email) {
+  /* function validateEmail(email) {
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
-  }
+  } */
 
-  function validate() {
+  /* function validate() {
     var $result = $("#result");
     var email = $("#email").val();
     $result.text("");
@@ -365,23 +405,46 @@ $countryResult = $countryStateCity->getAllCountry();
       $result.css("color", "red");
     }
     return false;
+  } */
+
+  /* $("#validate").on("keyup", validate); */
+
+  function validateEmail(b) {
+    var otp = localStorage.getItem('otp');
+    if (otp == b) {
+      document.getElementById('submit').style = "display:block";
+
+    } else {
+      document.getElementById('submit').style = "display:none";
+      Swal.fire(
+        'Wrong',
+        'OTP is not valid please try again',
+        'error'
+      );
+    }
   }
 
-  $("#validate").on("keyup", validate);
-
-  function validateEmail(b){
-   var otp = localStorage.getItem('otp');
-   if(otp == b){
-    document.getElementById('submit').disable = false;
-   }
-   else{
-    document.getElementById('submit').disable = true;
-    Swal.fire(
-            'Wrong',
-            'OTP is not valid please try again',
-            'error'
-          );
-   }
+  function uploadValidation(file) {
+    var fileInput = document.getElementById(file);
+    var filePath = fileInput.value;
+    /* var allowedExtensions = /(\.pdf)$/i ||; */
+    var allowedExtensions = /^(([a-zA-Z]:)|(\\{2}\w+)\$?)(\\(\w[\w].*))+(.doc|.docx|.DOC|.DOCX|.pdf|.PDF)$/;;
+    if (!allowedExtensions.exec(filePath)) {
+      /* swal.fire('Please upload pdf or text file.'); */
+      Swal.fire(
+        'Warning',
+        'Please upload pdf or text file.',
+        'warning'
+      );
+      fileInput.value = '';
+      return false;
+    } else {
+      Swal.fire(
+        'Success',
+        'File uploaded successfully.',
+        'success'
+      );
+    }
   }
 </script>
 </script>
